@@ -24,5 +24,24 @@ theoretic results and practical applications (including the famous Netflix chall
 information. Such information can be incorporated as additional features, and they in turn may be leveraged to improve completion performance
  or to predict for new rows or columns where there are no existing entries at all. The latter is often referred as the cold-start problem.
 # Pre-requisite
+Torch (>1.0)
+- Funk-SVD, we only use this to fetch the ratings. This is due to historical reason.
+- PyTorch-Ignite
 
-Funk-SVD, we only use this to fetch the ratings. This is due to historical reason.  
+# Run command
+
+```text
+gpu=0
+lr=1e-3
+bs=128
+epochs=350
+for full in 0
+do
+    for factors in 1000
+    do
+output=output-bs-$bs-factors-$factors-epochs-$epochs-full-$full-$lr.txt
+CUDA_VISIBLE_DEVICES=$gpu python ./train.py --factors $factors --lr $lr --bs $bs --epochs $epochs --full $full > $output
+done
+done
+```text
+
