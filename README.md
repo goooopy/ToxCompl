@@ -18,4 +18,4 @@ LI_RG230__P029648,-0.01,-0.08,-0.18,0.13,0.10,-0.05,-0.18,0.21,-0.12,-0.11,-0.12
 
 ```text
 
-fsdfadsf
+Matrix completion recovers a matrix M of size n1 ×n2 from a subset of its entries.  Low rank matrix completion is well-studied with many theoretic results and practical applications (including the famous Netflix challenge). Matrix completion algorithms minimize the rank, the nuclear norm, or the Frobenius norm. Beyond plain completion, in real-world applications, oftentimes additional information is associated with the rows and columns. Take the Netflix challenge for example. The rows have associated user information, and the columns have associated movie information. Such information can be incorporated as additional features, and they in turn may be leveraged to improve completion performance  or to predict for new rows or columns where there are no existing entries at all. The latter is often referred as the cold-start problem.
