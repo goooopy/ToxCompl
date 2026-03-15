@@ -17,4 +17,12 @@ LI_RG230__P030209,0.04,-0.05,-0.13,-0.07,-0.09,-0.08,0.08,-0.18,-0.03,-0.12,-0.0
 LI_RG230__P029648,-0.01,-0.08,-0.18,0.13,0.10,-0.05,-0.18,0.21,-0.12,-0.11,-0.12,-0.17,0.28,0.16,0.26,0.28,0.13,0.37,-0.09,-0.11,0.28,0.28,0.04,0.34,-0.07,0.15,-0.04,-0.33,-0.13,-0.04,0.12,-0.53,0.18,-0.03,-0.28,-0.28,0.03,-0.19,-0.08,-0.01,-0.07,-0.10,0.16,-0.55,-0.09,-0.03,0.05,0.01,-0.01,0.25
 
 ```text
-Matrix completion recovers a matrix M of size n1 ×n2 from a subset of its entries.  Low rank matrix completion is well-studied with many theoretic results and practical applications (including the famous Netflix challenge). Matrix completion algorithms minimize the rank, the nuclear norm, or the Frobenius norm. Beyond plain completion, in real-world applications, oftentimes additional information is associated with the rows and columns. Take the Netflix challenge for example. The rows have associated user information, and the columns have associated movie information. Such information can be incorporated as additional features, and they in turn may be leveraged to improve completion performance  or to predict for new rows or columns where there are no existing entries at all. The latter is often referred as the cold-start problem.
+Matrix completion recovers a matrix M of size n1 ×n2 from a subset of its entries.  Low rank matrix completion is well-studied with many
+theoretic results and practical applications (including the famous Netflix challenge). Matrix completion algorithms minimize the rank, the
+ nuclear norm, or the Frobenius norm. Beyond plain completion, in real-world applications, oftentimes additional information is associated with
+ the rows and columns. Take the Netflix challenge for example. The rows have associated user information, and the columns have associated movie
+information. Such information can be incorporated as additional features, and they in turn may be leveraged to improve completion performance
+ or to predict for new rows or columns where there are no existing entries at all. The latter is often referred as the cold-start problem.
+# Pre-requisite
+
+Funk-SVD, we only use this to fetch the ratings. This is due to historical reason.  
