@@ -5,9 +5,6 @@ import argparse
 from stats import printBreak
 
 """
-Created by Charlie Murphy
-30 June 2022
-
 This file tries random ratio combinations to try and surver the space of possible hybrid sampling
 approaches for drugMatrixCompletion.
 """
